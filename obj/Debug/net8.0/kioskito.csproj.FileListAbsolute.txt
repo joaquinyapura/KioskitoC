@@ -1,0 +1,14 @@
+E:\descargas\.net\kioskito\kioskito\bin\Debug\net8.0\kioskito.exe
+E:\descargas\.net\kioskito\kioskito\bin\Debug\net8.0\kioskito.deps.json
+E:\descargas\.net\kioskito\kioskito\bin\Debug\net8.0\kioskito.runtimeconfig.json
+E:\descargas\.net\kioskito\kioskito\bin\Debug\net8.0\kioskito.dll
+E:\descargas\.net\kioskito\kioskito\bin\Debug\net8.0\kioskito.pdb
+E:\descargas\.net\kioskito\kioskito\obj\Debug\net8.0\kioskito.GeneratedMSBuildEditorConfig.editorconfig
+E:\descargas\.net\kioskito\kioskito\obj\Debug\net8.0\kioskito.AssemblyInfoInputs.cache
+E:\descargas\.net\kioskito\kioskito\obj\Debug\net8.0\kioskito.AssemblyInfo.cs
+E:\descargas\.net\kioskito\kioskito\obj\Debug\net8.0\kioskito.csproj.CoreCompileInputs.cache
+E:\descargas\.net\kioskito\kioskito\obj\Debug\net8.0\kioskito.dll
+E:\descargas\.net\kioskito\kioskito\obj\Debug\net8.0\refint\kioskito.dll
+E:\descargas\.net\kioskito\kioskito\obj\Debug\net8.0\kioskito.pdb
+E:\descargas\.net\kioskito\kioskito\obj\Debug\net8.0\kioskito.genruntimeconfig.cache
+E:\descargas\.net\kioskito\kioskito\obj\Debug\net8.0\ref\kioskito.dll

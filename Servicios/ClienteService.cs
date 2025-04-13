@@ -29,7 +29,6 @@ namespace kioskito.Servicios
         }
 
 
-        //Registrar un pago (parcial o total).
         public void RegistrarPago(Cliente cliente, Double importe, String tipo)
         {
 
@@ -72,8 +71,21 @@ namespace kioskito.Servicios
             {
                 if (!t.Pagada)
                 {
-                    Console.WriteLine($"{t.Fecha.Date} | Monto: {t.Monto:C} ")
+                    Console.WriteLine($"{t.Fecha.Date} | Monto: {t.Monto:C} ");
                 }
+                ;
+            }
+        }
+
+        public void Mostrarpagos(Cliente cliente)
+        {
+            foreach (var t in cliente.Transacciones)
+            {
+                if (t.Pagada)
+                {
+                    Console.WriteLine($"{t.Fecha.Date} | Monto: {t.Monto:C} ");
+                }
+                ;
             }
         }
 

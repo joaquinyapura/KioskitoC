@@ -14,45 +14,37 @@ namespace kioskito.Servicios
             if (importe > 0)
             {
                 cliente.Transacciones.Add(
-                    new Transaccion
-                    {
-                        Fecha = DateTime.Today,
-                        Monto = importe,
-                        Pagada = false
-                    }
+                    new Transaccion(importe)
                 );
+
+                Console.WriteLine("Transacción completada");
             }
             else
             {
-                System.Console.WriteLine("no se puede generar una transacción negativa. use pagos");
+                Console.WriteLine("no se puede generar una transacción negativa. use pagos");
             }
         }
 
         /* Se registran pagos tipo "total" o "parcial" */
-        public void RegistrarPago(Cliente cliente, Double importe, String tipo)
+        public void RegistrarPago(Cliente cliente, Double importe)
         {
 
 
             double saldoRestante = importe;
-            foreach (var t in cliente.Transacciones)
+            foreach (var transaccion in cliente.Transacciones)
             {
-                if (!t.Pagada)
+                if (!transaccion.Pagada)
                 {
-                    if (saldoRestante >= t.Monto)
+                    if (saldoRestante >= transaccion.Monto)
                     {
-                        t.Pagada = true;
-                        saldoRestante -= t.Monto;
+                        transaccion.Pagada = true;
+                        saldoRestante -= transaccion.Monto;
                     }
                 }
 
             }
 
-            cliente.Pagos.Add(new Pago
-            {
-                Tipo = "total",
-                Fecha = DateTime.Today,
-                Monto = importe
-            });
+            cliente.Pagos.Add(new Pago(importe));
 
 
         }

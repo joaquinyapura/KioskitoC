@@ -3,8 +3,6 @@ using kioskito.Modelos;
 
 namespace kioskito.Servicios
 {
-
-
     public class ListaDeClientes
     {
         public List<Cliente> Clientes { get; set; } = new List<Cliente>();

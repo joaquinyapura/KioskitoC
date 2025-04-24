@@ -4,7 +4,8 @@ namespace kioskito.Modelos
 {
     public class Cliente
     {
-        public string Id;
+
+        public string Id { get; }
         public string NombreCompleto { get; set; }
         public List<Transaccion> Transacciones { get; set; } = new List<Transaccion>();
         public List<Pago> Pagos { get; set; } = new List<Pago>();
@@ -20,6 +21,15 @@ namespace kioskito.Modelos
             }
             set { }
         }
+
+
+        public Cliente(string nombrecompleto)
+        {
+            NombreCompleto = nombrecompleto;
+            Id = Guid.NewGuid().ToString();
+        }
+
+
     }
 }
 

@@ -28,7 +28,7 @@ namespace kioskito.Servicios
             }
         }
 
-
+        /* Se registran pagos tipo "total" o "parcial" */
         public void RegistrarPago(Cliente cliente, Double importe, String tipo)
         {
 

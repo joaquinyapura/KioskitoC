@@ -17,8 +17,6 @@ namespace kioskito.Modelos
             Monto = monto;
             Pagada = false;
 
-
-
         }
 
 

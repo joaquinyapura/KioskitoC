@@ -10,18 +10,20 @@ namespace kioskito.Servicios
     {
         public void RegistrarTransacción(double importe, Cliente cliente)
         {
-
             if (importe > 0)
             {
-                cliente.Transacciones.Add(
-                    new Transaccion(importe)
-                );
+                // crear la transacción en la lista del cliente
+                cliente.Transacciones.Add(new Transaccion(importe));
+
+                // registrar la transacción en la base de datos
+                Database db = new Database();
+                db.RegistrarTransaccion(importe, cliente.Id);
 
                 Console.WriteLine("Transacción completada");
             }
             else
             {
-                Console.WriteLine("no se puede generar una transacción negativa. use pagos");
+                Console.WriteLine("No se puede generar una transacción negativa. Use pagos.");
             }
         }
 
@@ -30,7 +32,11 @@ namespace kioskito.Servicios
         {
 
 
-            double saldoRestante = importe;
+
+
+
+
+            /* double saldoRestante = importe;
             foreach (var transaccion in cliente.Transacciones)
             {
                 if (!transaccion.Pagada)
@@ -44,7 +50,7 @@ namespace kioskito.Servicios
 
             }
 
-            cliente.Pagos.Add(new Pago(importe));
+            cliente.Pagos.Add(new Pago(importe)); */
 
 
         }

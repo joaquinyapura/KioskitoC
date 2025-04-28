@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kioskito")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20a34676125e5867d20579b607b038ab6165a5de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7ada541f92e618980d3068724c1cee22eab6b63")]
 [assembly: System.Reflection.AssemblyProductAttribute("kioskito")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kioskito")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
